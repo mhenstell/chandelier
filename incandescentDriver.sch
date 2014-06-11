@@ -3725,16 +3725,16 @@ Special BOM entry-only specifier field.</description>
 </class>
 </classes>
 <parts>
-<part name="J1" library="Livestream" deviceset="HEADER" device="">
+<part name="J1" library="Livestream" deviceset="HEADER" device="" value="LOAD 1">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J2" library="Livestream" deviceset="HEADER" device="">
+<part name="J2" library="Livestream" deviceset="HEADER" device="" value="LOAD 2">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J3" library="Livestream" deviceset="HEADER" device="">
+<part name="J3" library="Livestream" deviceset="HEADER" device="" value="LOAD 3">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J4" library="Livestream" deviceset="HEADER" device="">
+<part name="J4" library="Livestream" deviceset="HEADER" device="" value="LOAD 4">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
 <part name="\VAL" library="supply2" deviceset="VCC" device="" value="VCC24V"/>
@@ -3748,29 +3748,29 @@ Special BOM entry-only specifier field.</description>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="PTH" value="0.1uF">
 <attribute name="PARTNO" value="SR295E104MAR"/>
 </part>
-<part name="JP3" library="SparkFun-Connectors" deviceset="M05" device="LOCK">
+<part name="JP1" library="SparkFun-Connectors" deviceset="M05" device="LOCK" value="INPUT">
 <attribute name="PARTNO" value="M20-9960545"/>
 </part>
-<part name="JP1" library="SparkFun-Connectors" deviceset="M05" device="LOCK">
+<part name="JP2" library="SparkFun-Connectors" deviceset="M05" device="LOCK" value="OUTPUT">
 <attribute name="PARTNO" value="M20-9960545"/>
 </part>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="J11" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK">
+<part name="J11" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_LOCK" value="POWER INPUT">
 <attribute name="PARTNO" value="PJ-202A"/>
 </part>
 <part name="\VAL3" library="supply2" deviceset="VCC" device="" value="VCC24V"/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="J9" library="Livestream" deviceset="HEADER" device="">
+<part name="J9" library="Livestream" deviceset="HEADER" device="" value="POWER">
 <attribute name="DNP" value="T"/>
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J10" library="Livestream" deviceset="HEADER" device="">
+<part name="J10" library="Livestream" deviceset="HEADER" device="" value="POWER">
 <attribute name="DNP" value="T"/>
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
 <part name="\VAL4" library="supply2" deviceset="VCC" device="" value="VCC24V"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
-<part name="R1" library="SparkFun-Connectors" deviceset="M10" device="LOCK" value="10K">
+<part name="R1" library="SparkFun-Connectors" deviceset="M10" device="LOCK" value="10K-Array">
 <attribute name="PARTNO" value="L101S103LF"/>
 </part>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -3788,16 +3788,16 @@ Special BOM entry-only specifier field.</description>
 </part>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
-<part name="J5" library="Livestream" deviceset="HEADER" device="">
+<part name="J5" library="Livestream" deviceset="HEADER" device="" value="LOAD 5">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J6" library="Livestream" deviceset="HEADER" device="">
+<part name="J6" library="Livestream" deviceset="HEADER" device="" value="LOAD 6">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J7" library="Livestream" deviceset="HEADER" device="">
+<part name="J7" library="Livestream" deviceset="HEADER" device="" value="LOAD 7">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
-<part name="J8" library="Livestream" deviceset="HEADER" device="">
+<part name="J8" library="Livestream" deviceset="HEADER" device="" value="LOAD 8">
 <attribute name="PARTNO" value="OSTTC022162"/>
 </part>
 <part name="\VAL5" library="supply2" deviceset="VCC" device="" value="VCC24V"/>
@@ -3815,7 +3815,7 @@ Special BOM entry-only specifier field.</description>
 </part>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="R2" library="SparkFun-Connectors" deviceset="M10" device="LOCK" value="1K">
+<part name="R2" library="SparkFun-Connectors" deviceset="M10" device="LOCK" value="1K-Array">
 <attribute name="PARTNO" value="4609X-101-102LF"/>
 </part>
 <part name="\VAL6" library="supply2" deviceset="VCC" device="" value="VCC"/>
@@ -3872,10 +3872,10 @@ Special BOM entry-only specifier field.</description>
 <instance part="C1" gate="G$1" x="-10.16" y="165.1">
 <attribute name="PARTNO" x="-10.16" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP3" gate="G$1" x="-60.96" y="119.38">
+<instance part="JP1" gate="G$1" x="-60.96" y="119.38">
 <attribute name="PARTNO" x="-60.96" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="JP1" gate="G$1" x="-48.26" y="93.98" rot="R180">
+<instance part="JP2" gate="G$1" x="-48.26" y="93.98" rot="R180">
 <attribute name="PARTNO" x="-48.26" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="-66.04" y="83.82"/>
@@ -3981,13 +3981,13 @@ Special BOM entry-only specifier field.</description>
 <junction x="-53.34" y="147.32"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="3"/>
+<pinref part="JP1" gate="G$1" pin="3"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="-53.34" y1="119.38" x2="-43.18" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="119.38" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
 <wire x1="-55.88" y1="93.98" x2="-66.04" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="93.98" x2="-66.04" y2="86.36" width="0.1524" layer="91"/>
@@ -4295,6 +4295,11 @@ Special BOM entry-only specifier field.</description>
 <wire x1="-22.86" y1="152.4" x2="-20.32" y2="152.4" width="0.1524" layer="91"/>
 <label x="-20.32" y="152.4" size="1.4224" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="96.52" x2="-58.42" y2="96.52" width="0.1524" layer="91"/>
+<label x="-58.42" y="96.52" size="1.4224" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="G" class="0">
 <segment>
@@ -4303,12 +4308,12 @@ Special BOM entry-only specifier field.</description>
 <label x="-50.8" y="157.48" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="5"/>
+<pinref part="JP1" gate="G$1" pin="5"/>
 <wire x1="-53.34" y1="124.46" x2="-50.8" y2="124.46" width="0.1524" layer="91"/>
 <label x="-50.8" y="124.46" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="-55.88" y1="99.06" x2="-58.42" y2="99.06" width="0.1524" layer="91"/>
 <label x="-58.42" y="99.06" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -4320,12 +4325,12 @@ Special BOM entry-only specifier field.</description>
 <label x="-50.8" y="162.56" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="-53.34" y1="114.3" x2="-50.8" y2="114.3" width="0.1524" layer="91"/>
 <label x="-50.8" y="114.3" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="5"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
 <wire x1="-55.88" y1="88.9" x2="-58.42" y2="88.9" width="0.1524" layer="91"/>
 <label x="-58.42" y="88.9" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -4337,12 +4342,12 @@ Special BOM entry-only specifier field.</description>
 <label x="-50.8" y="170.18" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="116.84" x2="-50.8" y2="116.84" width="0.1524" layer="91"/>
 <label x="-50.8" y="116.84" size="1.4224" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="JP2" gate="G$1" pin="4"/>
 <wire x1="-55.88" y1="91.44" x2="-58.42" y2="91.44" width="0.1524" layer="91"/>
 <label x="-58.42" y="91.44" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -4354,14 +4359,9 @@ Special BOM entry-only specifier field.</description>
 <label x="-50.8" y="175.26" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="G$1" pin="4"/>
+<pinref part="JP1" gate="G$1" pin="4"/>
 <wire x1="-53.34" y1="121.92" x2="-50.8" y2="121.92" width="0.1524" layer="91"/>
 <label x="-50.8" y="121.92" size="1.4224" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="-55.88" y1="96.52" x2="-58.42" y2="96.52" width="0.1524" layer="91"/>
-<label x="-58.42" y="96.52" size="1.4224" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -4592,6 +4592,31 @@ Special BOM entry-only specifier field.</description>
 </sheets>
 <errors>
 <approved hash="102,1,-12.7,132.08,VCC,VCC24V,,,,"/>
+<approved hash="102,1,-45.72,220.98,VCC,VCC24V,,,,"/>
+<approved hash="102,1,-10.16,226.06,VCC,VCC24V,,,,"/>
+<approved hash="102,1,50.8,132.08,VCC,VCC24V,,,,"/>
+<approved hash="102,1,10.16,226.06,VCC,VCC24V,,,,"/>
+<approved hash="201,1,10.16,226.06,VCC,VCC24V\, VCC,,,,"/>
+<approved hash="201,1,50.8,132.08,VCC,VCC24V\, VCC,,,,"/>
+<approved hash="201,1,-10.16,226.06,VCC,VCC24V\, VCC,,,,"/>
+<approved hash="201,1,-45.72,220.98,VCC,VCC24V\, VCC,,,,"/>
+<approved hash="201,1,-12.7,132.08,VCC,VCC24V\, VCC,,,,"/>
+<approved hash="115,1,8.72325,109.22,Q2,,,,,"/>
+<approved hash="115,1,23.9632,109.22,Q1,,,,,"/>
+<approved hash="115,1,8.72325,81.28,Q4,,,,,"/>
+<approved hash="115,1,23.9632,81.28,Q3,,,,,"/>
+<approved hash="115,1,72.2232,109.22,Q6,,,,,"/>
+<approved hash="115,1,87.4632,109.22,Q5,,,,,"/>
+<approved hash="115,1,72.2232,81.28,Q8,,,,,"/>
+<approved hash="115,1,87.4632,81.28,Q7,,,,,"/>
+<approved hash="115,1,57.15,185.098,LED1,,,,,"/>
+<approved hash="115,1,57.15,180.018,LED2,,,,,"/>
+<approved hash="115,1,57.15,174.938,LED3,,,,,"/>
+<approved hash="115,1,57.15,169.858,LED4,,,,,"/>
+<approved hash="115,1,57.15,164.778,LED5,,,,,"/>
+<approved hash="115,1,57.15,159.698,LED6,,,,,"/>
+<approved hash="115,1,57.15,154.618,LED7,,,,,"/>
+<approved hash="115,1,57.15,149.538,LED8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
